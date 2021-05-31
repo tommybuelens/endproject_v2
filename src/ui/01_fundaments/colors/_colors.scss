@@ -1,0 +1,27 @@
+$colors: (
+	'neutral--1': #ffffff,
+	'neutral--2': rgba(255, 255, 255, 0.3),
+	'neutral--3': rgba(255, 255, 255, 0.5),
+	'neutral--4': #e5e5e5,
+	'neutral--5': #dadada,
+	'neutral--6': #d8d8d8,
+	'neutral--7': #000000,
+	'neutral--8': rgba(0, 0, 0, 0.05),
+	'brand--1': #be6361,
+	'brand--2': #333333,
+	'brand--3': rgba(51, 51, 51, 0.5),
+	'brand--4': #2b2b2b,
+	'brand--5': #fff2dd,
+	'brand--6': #a85756,
+	'brand--7': #ff8482,
+);
+
+// Setup color classes
+@each $key, $value in $colors {
+	.bg--#{$key} {
+		background-color: #{$value};
+	}
+	.fc--#{$key} {
+		color: #{$value};
+	}
+}

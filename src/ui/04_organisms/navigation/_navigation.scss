@@ -1,0 +1,44 @@
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	&__list {
+		display: none;
+		width: 100%;
+		text-align: center;
+	}
+	&__list.active {
+		display: block;
+	}
+	&__cta {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 870px) {
+	.nav {
+		align-items: center;
+		flex-wrap: nowrap;
+		background: none;
+
+		&__hamburger {
+			display: none;
+		}
+
+		&__list {
+			ul {
+				display: flex;
+			}
+			order: 1;
+			position: relative;
+			display: block;
+			width: auto;
+		}
+
+		&__cta {
+			order: 2;
+			display: block;
+		}
+	}
+}

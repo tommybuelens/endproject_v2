@@ -1,0 +1,24 @@
+.button {
+	width: 170px;
+	height: 48px;
+	border: none;
+	border-radius: 3px;
+	box-sizing: border-box;
+
+	&__cta {
+		@extend .button;
+		background-color: transparent;
+		color: map-get($colors, 'neutral--1');
+		border: 1px solid map-get($colors, 'neutral--2');
+	}
+	&__1 {
+		@extend .button;
+		border: 2px solid map-get($colors, 'brand--4');
+	}
+
+	&__2 {
+		@extend .button;
+		border: 1px solid map-get($colors, 'brand--1');
+		background-color: transparent;
+	}
+}
