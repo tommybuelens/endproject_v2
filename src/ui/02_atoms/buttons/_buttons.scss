@@ -4,6 +4,7 @@
 	border: none;
 	border-radius: 3px;
 	box-sizing: border-box;
+	background-color: map-get($colors, 'neutral--1');
 
 	&__cta {
 		@extend .button;
@@ -18,7 +19,14 @@
 
 	&__2 {
 		@extend .button;
-		border: 1px solid map-get($colors, 'brand--1');
+		color: map-get($colors, 'neutral--1');
+		background-color: map-get($colors, 'brand--1');
+	}
+
+	&__3 {
+		@extend .button;
 		background-color: transparent;
+		color: map-get($colors, 'brand--1');
+		border: 1px solid map-get($colors, 'brand--1');
 	}
 }

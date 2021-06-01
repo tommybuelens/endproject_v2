@@ -1,0 +1,16 @@
+.block {
+	&__right {
+		max-width: 530px;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	.block {
+		h2 {
+			font-size: 72px;
+			line-height: 80px;
+			font-weight: 400;
+			max-width: 500px;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@media only screen and (min-width: 530px) {
+	.email {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 470px;
+
+		&__input {
+			max-width: 270px;
+		}
+		button {
+			max-width: 170px;
+			margin: 0;
+		}
+	}
+}

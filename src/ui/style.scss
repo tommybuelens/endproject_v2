@@ -5,5 +5,16 @@
 
 @import '02_atoms/buttons/buttons';
 @import '02_atoms/atoms';
+@import '02_atoms/images/images';
+@import '02_atoms/inputs/email-input';
+
+@import '03_molecules/email-form/email-form';
+@import '03_molecules/header-content/header-content';
+@import '03_molecules/cards/cards';
+@import '03_molecules/bullet-points/bullet-points';
 
 @import '04_organisms/navigation/navigation';
+@import '04_organisms/header/header';
+@import '04_organisms/cards/cards';
+@import '04_organisms/banner/banner';
+@import '04_organisms/footer/footer';
