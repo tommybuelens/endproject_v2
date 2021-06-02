@@ -816,8 +816,17 @@ a {
     display: none;
     width: 100%;
     text-align: center; }
+  .nav__hamburger {
+    z-index: 2; }
   .nav__list.active {
-    display: block; }
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #be6361; }
+    .nav__list.active li {
+      margin: 20px 0; }
   .nav__cta {
     display: none; }
 

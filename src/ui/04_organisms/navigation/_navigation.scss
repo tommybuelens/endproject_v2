@@ -8,8 +8,19 @@
 		width: 100%;
 		text-align: center;
 	}
+	&__hamburger {
+		z-index: 2;
+	}
 	&__list.active {
-		display: block;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 30vh;
+		background-color: map-get($map: $colors, $key: 'brand--1');
+		li {
+			margin: 20px 0;
+		}
 	}
 	&__cta {
 		display: none;
